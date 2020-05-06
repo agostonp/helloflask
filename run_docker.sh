@@ -6,5 +6,5 @@ docker build --tag=helloflask .
 #List images
 docker image ls
 
-#Open shell inside docker image
-docker run -it helloflask bash
+#Create a container from the docker image and start it
+docker run -it -p 80:5000 --name hellocont helloflask
