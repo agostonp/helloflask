@@ -16,4 +16,5 @@ RUN pip install --upgrade pip &&\
 EXPOSE 5000
 
 # Run hello.py at container launch
-CMD env FLASK_APP=hello.py flask run --host=0.0.0.0
+#CMD env FLASK_APP=hello.py flask run --host=0.0.0.0
+CMD ["env", "FLASK_APP=hello.py", "flask", "run", "--host=0.0.0.0"]
